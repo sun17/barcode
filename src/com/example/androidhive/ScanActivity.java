@@ -176,6 +176,9 @@ public class ScanActivity extends Activity {
 		    
 		    
 		  }
+		  /*
+		  saving into database
+		  */
 
 	private void addEntry() 
 	{
