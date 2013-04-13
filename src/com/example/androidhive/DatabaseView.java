@@ -28,7 +28,6 @@ public class DatabaseView extends Activity
        
        TextView tv = (TextView)findViewById(R.id.info);
        
-       insertvalues();
        HistoryManager list = new HistoryManager(getApplicationContext());       
        list.open();       
        String info= list.getData();       
@@ -62,21 +61,6 @@ public class DatabaseView extends Activity
         show.close();
           
    }
-   
-   private void insertvalues()
-   {
-	   	HistoryManager entry = new HistoryManager(DatabaseView.this);
-		entry.open();
-		entry.createEntry("ffffffff","fffff","QRCode");
-		entry.createEntry("ffffffff","fffff","QRCode");
-		entry.createEntry("ffffffff","fffff","QRCode");
-		entry.createEntry("ffffffff","fffff","QRCode");
-		entry.createEntry("ffffffff","fffff","QRCode");
-		entry.createEntry("ffffffff","fffff","QRCode");
-		entry.createEntry("ffffffff","fffff","QRCode");
-		entry.close(); 
-	    
-	}
-           
+     
            
 }
